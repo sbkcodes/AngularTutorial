@@ -1,11 +1,4 @@
 <h1>header {{ parent }}</h1>
-<div *ngIf="fruits.length > 0" class="fruits">
-  <p>Fruit List</p>
-  <div *ngFor="let fruit of fruits">{{ fruit }}</div>
-</div>
-
-<div *ngIf="userList.length > 0" class="user">
-  <p>Users List</p>
-  <div *ngFor="let ul of userList">{{ ul.firstName }} {{ ul.lastname }}</div>
-</div>
+<app-child></app-child>
+<app-button></app-button>
 <p>parent footer</p>
