@@ -1,0 +1,20 @@
+<p>Pipes</p>
+<h4>Uppercase and lowercase</h4>
+<p>UppercasePipe : {{ str | uppercase }}</p>
+<p>LowercasePipe: {{ str | lowercase }}</p>
+
+<h4>Date</h4>
+<p>Birthday date is {{ birthday | date | uppercase }}</p>
+<p>Birthday date is {{ birthday | date: "MM/dd/yy" }}</p>
+
+<h4>Currency</h4>
+<p>Amount is {{ amount | currency: "INR":"Rs:" }}</p>
+
+<h4>Decimal</h4>
+<p>Decimal {{ decimalvalue | number: "3.2-5" }}</p>
+
+<h4>Percent</h4>
+<p>Percent value: {{ pervalue | percent: "2.0-1" }}</p>
+
+<h4>Custom Pipe</h4>
+<p>Power booster: {{ 4 | exponentialStrength: 5 }}</p>
