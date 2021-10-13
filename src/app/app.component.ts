@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ITP CANDIDATE';
+  fname: string = '';
+  lname: string = '';
+  fruits: string[] = ['carrot', 'apple', 'banana'];
 }
