@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from '../user';
 
 @Component({
   selector: 'app-parent',
@@ -11,6 +12,21 @@ export class ParentComponent {
   classes = 'special';
 
   parentchildName: string = 'MyChild';
+
+  userList: User[] = [
+    {
+      userId: 1,
+      userName: 'abc',
+    },
+    {
+      userId: 2,
+      userName: 'prq',
+    },
+    {
+      userId: 3,
+      userName: 'xyz',
+    },
+  ];
 
   toggle() {
     this.isDisabledBtn = true;

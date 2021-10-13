@@ -1,5 +1,9 @@
 <p>parent works!</p>
 <app-child [childName]="parentchildName"></app-child>
+<div *ngFor="let parentUser of userList">
+  {{ parentUser.userName }}
+</div>
+<app-user *ngFor="let parentUser of userList" [user]="parentUser"></app-user>
 
 <!-- <img [src]="url" alt="image" />
 <tr>
