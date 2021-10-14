@@ -1,4 +1,9 @@
-<p>
-  {{ user.userId }}
-  {{ user.userName }}
-</p>
+<div class="user">
+  <div class="userDiv">
+    {{ user.userId }}
+    {{ user.userName }}
+  </div>
+  <div>
+    <button (click)="onDelete(user)">Delete</button>
+  </div>
+</div>

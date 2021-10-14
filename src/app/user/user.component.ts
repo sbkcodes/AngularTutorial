@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { User } from '../user';
 
 @Component({
@@ -8,4 +8,11 @@ import { User } from '../user';
 })
 export class UserComponent {
   @Input() user!: User;
+  @Output() deleteRequest = new EventEmitter<User>();
+
+  onDelete(userParam: User) {
+    // console.log(userParam);
+    // Need to call parent component method
+    this.deleteRequest.emit(userParam);
+  }
 }

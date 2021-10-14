@@ -35,4 +35,12 @@ export class ParentComponent {
   enabled() {
     this.isDisabledBtn = false;
   }
+
+  deleteUser(param: User) {
+    console.log('parent', param);
+    // filter user data
+    this.userList = this.userList.filter(
+      (user) => user.userId !== param.userId
+    );
+  }
 }
