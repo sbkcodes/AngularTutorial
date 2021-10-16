@@ -1,0 +1,6 @@
+<p>directive works!</p>
+
+<span [ngClass]="status == 'pending' ? 'error' : 'success'"> Status </span>
+<p [ngClass]="currClass">Multiple classes</p>
+<p [ngStyle]="currStyles">Ng style</p>
+<button (click)="onResolved()">Resolved</button>

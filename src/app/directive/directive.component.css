@@ -1,0 +1,15 @@
+.error {
+  color: red;
+}
+
+.success {
+  color: green;
+}
+
+.savable {
+  font-size: 20px;
+}
+
+.editable {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
