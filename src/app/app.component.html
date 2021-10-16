@@ -1,3 +1,11 @@
 <h1>Welcome {{ title }}</h1>
 <app-directive></app-directive>
 <app-customattrdirective></app-customattrdirective>
+
+<div *ngIf="title; else elseBlock">{{ title }}</div>
+<ng-template #elseBlock>Value is not present</ng-template>
+
+<div [ngSwitch]="title">
+  <div *ngSwitchCase="'ITP'">ITP in switch case</div>
+  <div *ngSwitchDefault>default</div>
+</div>
