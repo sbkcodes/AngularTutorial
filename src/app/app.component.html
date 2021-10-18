@@ -1,1 +1,9 @@
 <h1>Welcome {{ title }}</h1>
+<button (click)="getData()">Click for All user data</button>
+<button (click)="getActiveData()">Click for Active users data</button>
+<button (click)="getAdminData()">Click for All Admin data</button>
+<div *ngIf="userList.length > 0">
+  <div *ngFor="let user of userList">
+    <p>{{ user.fname }} {{ user.lname }}</p>
+  </div>
+</div>
