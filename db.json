@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "text": "Doct Appointment",
+      "day": "JULY 25, 2021 at 4.32",
+      "reminder": false
+    },
+    {
+      "id": 2,
+      "text": "Appointment",
+      "day": "JULY 28, 2021 at 4.32",
+      "reminder": false
+    },
+    {
+      "id": 3,
+      "text": "Important Appointment",
+      "day": "JULY 20, 2021 at 4.32",
+      "reminder": false
+    }
+  ]
+}
