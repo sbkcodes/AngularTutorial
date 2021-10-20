@@ -17,6 +17,18 @@
       "text": "Important Appointment",
       "day": "JULY 20, 2021 at 4.32",
       "reminder": false
+    },
+    {
+      "text": "New Appointment",
+      "day": "JULY 25, 2021 at 4.32",
+      "reminder": true,
+      "id": 4
+    },
+    {
+      "text": "Appointment",
+      "day": "JULY 25, 2021 at 5.50",
+      "reminder": false,
+      "id": 5
     }
   ]
 }

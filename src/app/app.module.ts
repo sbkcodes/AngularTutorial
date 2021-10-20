@@ -7,6 +7,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { TasksComponent } from './components/tasks/tasks.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { TaskComponent } from './components/task/task.component';
+import { AddTaskComponent } from './components/add-task/add-task.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,8 +17,9 @@ import { TaskComponent } from './components/task/task.component';
     TasksComponent,
     FooterComponent,
     TaskComponent,
+    AddTaskComponent,
   ],
-  imports: [BrowserModule, HttpClientModule],
+  imports: [BrowserModule, HttpClientModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
